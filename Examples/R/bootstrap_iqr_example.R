@@ -6,6 +6,8 @@
 
 ## Generate some example data: ------------------------------------------------
 n = 50
+
+
 x = rgamma(n, shape=3, rate=1)
 boxplot(x, las=1, main='Boxplot of Data')
 iqr_est = unname(diff(quantile(x, c(.25, .75))))
